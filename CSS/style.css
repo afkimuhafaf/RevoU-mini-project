@@ -1,7 +1,12 @@
-body{
-    background-color: #bdbdb9;
-    font-family: inherit;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
 #logo{
     display: flex;
     justify-items: flex-start;
@@ -25,6 +30,18 @@ nav {
     justify-content: space-between;
 }
 
+.content{
+    display: flex;
+    flex-direction: row;    
+}
+
+.content > div {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .container {
     display: flex;
     justify-content: flex-end;
@@ -41,16 +58,40 @@ nav {
 
 .home{
     border: 1px solid #000;
+    margin-block: 1px;
 
 }
 .package{
     border: 1px solid #000;
-
+    margin-block: 1px;
 }
 .call{
     border: 1px solid #000;
-
+    margin-block: 1px;
 }
 
+.main-package-img{
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 
 
+    padding: 50px;
+    margin: 10px;
+    border: 2px solid;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.right-section{
+    border: 2px solid #c7c5c5;
+    background-color: #c7c5c5;
+}

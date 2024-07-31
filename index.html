@@ -10,6 +10,7 @@
 
 
 <body>
+<header>
     <script src="JS\script.js"></script>
     <nav id="flyer">
         <img id="logo" src="github-logo-face.png" width="32" height="32">
@@ -19,36 +20,53 @@
         <div class="package">Our Package</div>
         <div class="call">Call Us</div>
     </section>
-
     </nav>
+</header>
+
+
     <h1><span id="title">Mini-Project Travel</span></h1>
     <br>
     <p id="subtheme">RevoU Travel Website Project</p>
 
 
 
+    <main class="content">
+    
+        <div class="main-package-img">
+            <img src="github-logo-face.png" width="64" height="64">
+            <p><i><q>Liburan menjadi lebih mudah dengan TravelAgent</q></i></p>
+        </div>
 
-    <form>
-        <h1>Contact Us</h1>
-        <p>lorem ipsum dolor......</p>
-        <label for="name">Nama</label>
-        <input type="text">
-        <label for="email">Email</label>
-        <input type="email">
-        <label>Destinasi Wisata</label>
-        <select>
-            <ul id="Dalam negeri">
-                <li>Raja Ampat</li>
-                <li>Danau Toba</li>
-                <li>Kawah Rinjani</li>
-            </ul>
+        <div class="right-section">
+            <form>
+                <h1>Contact Us</h1>
+                <p>lorem ipsum dolor......</p>
+                <tr><label for="name">Nama</label></tr>
+                <input type="text">
+                <td><label for="email">Email</label></td>
+                <input type="email">
+                <td><label>Destinasi Wisata</label></td>
+                <select>
+                        <optgroup label="Dalam Negeri">
+                        <option>Raja Ampat</option>
+                        <option>Danau Toba</option>
+                        <option>Kawah Rinjani</option>
+                    </optgroup>
             
-            <ul>
-                <li>Eifel</li>
-                <li>Greet Wall of China</li>
-            </ul>
+                    <optgroup label="Luar Negeri">
+                        <option>Eifel</option>
+                        <option>Greet Wall of China</option>
+                    </optgroup>
             
-        </select>
-    </form>
+                </select>
+                <br>
+                <button type="submit" id="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+
+
+
 </body>
 </html>
