@@ -1,31 +1,24 @@
-/=============== SHOW MENU ===============/
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
-
-/===== MENU SHOW =====/
-/* Validate if constant exists /
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
-  });
+function validateForm() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
 }
 
-/===== MENU HIDDEN =====/
-/ Validate if constant exists */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
+    if (name === "") {
+        alert  ("Tidak boleh kosong");
+        return false;
 }
 
-/=============== REMOVE MENU MOBILE ===============/
-const navLink = document.querySelectorAll(".navlink");
+    if (email === "") {
+        alert  ("Tidak boleh kosong");
+        return false;
+}
 
-const linkAction = () => {
-  const navMenu = document.getElementById("nav-menu");
-  // When we click on each navlink, we remove the show-menu class
-  navMenu.classList.remove("show-menu");
-};
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+    if (!email.includes("@")) {
+        alert  ("Email harus mengandung @");
+        return false;
+}
+
+document.getElementById("submit").addEventListener("click", function(){
+    return validateForm();
+})
 

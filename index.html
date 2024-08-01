@@ -10,27 +10,30 @@
 
 
 <body>
-<header>
+
     <script src="JS\script.js"></script>
+
+
+<header>
     <nav id="flyer">
         <img id="logo" src="github-logo-face.png" width="32" height="32">
 
     <section class="container">
-        <div class="home">Home</div>
-        <div class="package">Our Package</div>
-        <div class="call">Call Us</div>
+        <div class="home"> <a href="#home">Home</a> </div>
+        <div class="package"> <a href="#package">Our Package</a> </div>
+        <div class="call"> <a href="#call">Call Us</a> </div>
     </section>
     </nav>
 </header>
 
-
-    <h1><span id="title">Mini-Project Travel</span></h1>
+<section>
+    <h1><span id="home">Mini-Project Travel</span></h1>
     <br>
     <p id="subtheme">RevoU Travel Website Project</p>
+</section>
 
 
-
-    <main class="content">
+    <aside class="content">
     
         <div class="main-package-img">
             <img src="github-logo-face.png" width="64" height="64">
@@ -38,15 +41,20 @@
         </div>
 
         <div class="right-section">
-            <form>
+            <form name="RegForm" onsubmit="return validateForm()">
                 <h1>Contact Us</h1>
-                <p>lorem ipsum dolor......</p>
-                <tr><label for="name">Nama</label></tr>
-                <input type="text">
+                <p>Tim kami akan segera menghubungi anda 1x24 jam setelah data kami terima</p>
+                <br>
+                <tr><label for="name" >Nama</label></tr>
+                <input type="text" placeholder="Enter your Name" required> 
+                <p id="name-error" class="error-message"></p>
+
                 <td><label for="email">Email</label></td>
-                <input type="email">
+                <input type="email" placeholder="Enter your email" required>
+                <p id="email-error" class="error-message"></p>
+
                 <td><label>Destinasi Wisata</label></td>
-                <select>
+                <select placeholder="select one offer below">
                         <optgroup label="Dalam Negeri">
                         <option>Raja Ampat</option>
                         <option>Danau Toba</option>
@@ -57,13 +65,63 @@
                         <option>Eifel</option>
                         <option>Greet Wall of China</option>
                     </optgroup>
-            
+                    
                 </select>
                 <br>
-                <button type="submit" id="submit" name="submit">Submit</button>
+                <button type="submit" id="submit" name="submit" onclick (dosomething())>Send</button>
             </form>
         </div>
-    </main>
+    </aside>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="call">
+    <p>081334029521</p>
+</div>
+
+
+
+
 
 
 

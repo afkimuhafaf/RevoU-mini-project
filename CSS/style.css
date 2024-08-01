@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@media only screen and (max-width:600px) {
+    nav#flyer, img#logo, section.container, section, aside.content{
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -16,8 +27,7 @@ body {
     margin-bottom: 5px;
     margin-right: 5px;
 }
-#title{
-    border: 5px solid #fff;
+#home{
     display: flex;
     justify-content: center;
 }
@@ -25,16 +35,19 @@ body {
     display: flex;
     justify-content: center;
 }
+
+header {
+    display: block;
+    justify-content: space-between;
+}
 nav {
     display: flex;
     justify-content: space-between;
 }
-
 .content{
     display: flex;
     flex-direction: row;    
 }
-
 .content > div {
     display: flex;
     flex: 1;
@@ -47,7 +60,6 @@ nav {
     justify-content: flex-end;
     padding: 10px;
 }
-
 .container > div {
     padding: 10px;
     margin-top: 5px;
@@ -55,21 +67,30 @@ nav {
     margin-bottom: 5px;
     margin-right: 5px;
 }
-
 .home{
     border: 1px solid #000;
+    border-radius: 5px;
     margin-block: 1px;
-
 }
 .package{
     border: 1px solid #000;
+    border-radius: 5px;
     margin-block: 1px;
 }
 .call{
     border: 1px solid #000;
+    border-radius: 5px;
     margin-block: 1px;
 }
-
+.package:hover {
+    transform: translateY(-10px);
+  }
+.home:hover {
+    transform: translateY(-10px);
+}
+.call:hover {
+    transform: translateY(-10px);
+  }
 .main-package-img{
     display: flex;
     flex: 1;
@@ -83,6 +104,7 @@ nav {
     padding: 50px;
     margin: 10px;
     border: 2px solid;
+    border-radius: 5px;
 }
 form{
     display: flex;
@@ -90,8 +112,46 @@ form{
     padding: 10px;
     margin: 10px;
 }
-
+form > input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form > select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form > button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 .right-section{
     border: 2px solid #c7c5c5;
+    border-radius: 5px;
     background-color: #c7c5c5;
+}
+#call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
