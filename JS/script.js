@@ -3,12 +3,7 @@ function validateForm() {
     const email = document.getElementById("email").value;
 }
 
-    if (name === "") {
-        alert  ("Tidak boleh kosong");
-        return false;
-}
-
-    if (email === "") {
+    if (name === "" || email === "") {
         alert  ("Tidak boleh kosong");
         return false;
 }

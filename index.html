@@ -19,7 +19,7 @@
         <img id="logo" src="github-logo-face.png" width="32" height="32">
 
     <section class="container">
-        <div class="home"> <a href="#home">Home</a> </div>
+        <div class="home"> <a href="#flyer">Home</a> </div>
         <div class="package"> <a href="#package">Our Package</a> </div>
         <div class="call"> <a href="#call">Call Us</a> </div>
     </section>
@@ -27,18 +27,55 @@
 </header>
 
 <section>
-    <h1><span id="home">Mini-Project Travel</span></h1>
+    <h1>Mini-Project Travel</h1>
     <br>
     <p id="subtheme">RevoU Travel Website Project</p>
 </section>
 
 
     <aside class="content">
+        <div class="main-package-img" id="autoslide">
+            
+            <img class="main-package-img-inner" src="github-logo-face.png" width="128" height="128"/>
+            <img class="main-package-img-inner" src="101914_slax_512x512.png" width="128" height="128"/>
+            <img class="main-package-img-inner" src="git LOGO 3.png" width="128" height="128"/>
+            <img class="main-package-img-inner" src="GIT LOGO.png" width="128" height="128"/>
+            <img class="main-package-img-inner" src="logo fadhil copy.png" width="128" height="128"/>
+            <button onclick="plusDivs(-1)">Previous</button>
+            <button onclick="plusDivs(1)">Next</button>
     
-        <div class="main-package-img">
-            <img src="github-logo-face.png" width="64" height="64">
             <p><i><q>Liburan menjadi lebih mudah dengan TravelAgent</q></i></p>
+            <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+
+function plusDivs(n) {
+    showDivs((slideIndex += n));
+}
+
+function showDivs(n) {
+    var i
+    var imgList = document.getElementsByClassName("main-package-img-inner");
+    if (n > imgList.length) slideIndex = 1;
+    else if (n < 1) slideIndex = imgList.length;
+
+    for (i = 0; i < imgList.length; i++){
+        imgList[i].style.display = "none";
+    }
+
+    imgList[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => {  plusDivs(+1)// Change image every 3 seconds
+        // plusDivs(-1);  // Change image every 3 seconds in reverse order (if needed)
+        // plusDivs(2);  // Change image every 3 seconds in a third direction (if needed)
+        // plusDivs(0);  // Change image every 3 seconds in a random direction (if needed)
+    }, 2000)
+
+</script>
         </div>
+
 
         <div class="right-section">
             <form name="RegForm" onsubmit="return validateForm()">
