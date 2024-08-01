@@ -20,7 +20,7 @@
 
     <section class="container">
         <div class="home"> <a href="#flyer">Home</a> </div>
-        <div class="package"> <a href="#package">Our Package</a> </div>
+        <div class="package"> <a href="#product">Our Package</a> </div>
         <div class="call"> <a href="#call">Call Us</a> </div>
     </section>
     </nav>
@@ -83,11 +83,11 @@ function showDivs(n) {
                 <p>Tim kami akan segera menghubungi anda 1x24 jam setelah data kami terima</p>
                 <br>
                 <tr><label for="name" >Nama</label></tr>
-                <input type="text" placeholder="Enter your Name" required> 
+                <input type="text" id="customer-name" placeholder="Enter your Name" > 
                 <p id="name-error" class="error-message"></p>
 
                 <td><label for="email">Email</label></td>
-                <input type="email" placeholder="Enter your email" required>
+                <input type="email" id="customer-email" placeholder="Enter your email" >
                 <p id="email-error" class="error-message"></p>
 
                 <td><label>Destinasi Wisata</label></td>
@@ -105,7 +105,7 @@ function showDivs(n) {
                     
                 </select>
                 <br>
-                <button type="submit" id="submit" name="submit" onclick (dosomething())>Send</button>
+                <button type="button" id="submit" name="submit" onclick="validateForm()" >Send</button>
             </form>
         </div>
     </aside>
@@ -137,7 +137,9 @@ function showDivs(n) {
 <br>
 <br>
 <br>
-
+<div>
+    <h1 id="product">Our Product</h1>
+</div>
 <br><br>
 <br>
 <br>
